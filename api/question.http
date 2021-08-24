@@ -1,0 +1,31 @@
+@api = http://localhost:4000
+
+GET {{api}}/question
+
+################################
+
+GET {{api}}/question/612306821c3a063cb42f24b1
+
+################################
+POST {{api}}/question
+Content-Type: application/json
+
+	{
+		"category": "History",
+		"difficulty": "hard",
+		"question": "Joseph Stalin&#039;s real name ",
+		"correct_answer": true,
+		"incorrect_answers": false,
+		"answers": true
+	}
+
+################################
+DELETE {{api}}/question/612307081c3a063cb42f24b5
+
+################################
+PUT {{api}}/question/612306821c3a063cb42f24b1
+Content-Type: application/json
+
+{
+	"difficulty": "hard"
+}
